@@ -4,81 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document abc</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/other.css">
 </head>
 <body>
-  <header class="page-header">
+  <header id="header" class="page-header">
+    <div class="child">
+      child 1
+      <div class="child">Child 2</div>
+    </div>
     <div class="header-top">
-      <p>Welcome to HTML</p>
-      <ul class="header-account-links">
-        <li><a href="">Login</a></li>
-        <li><a href="">Register</a></li>
-      </ul>
+      <div class="container">
+        <p>Welcome to HTML</p>
+        <ul class="header-account-links">
+          <li><a href="">Login</a></li>
+          <li><a href="">Register</a></li>
+        </ul>
+      </div>
     </div>
     <div class="header-middle">
       <!-- Content header middle -->
     </div>
     <nav class="header-nav">
-      <ul class="header-menu">
-        <li><a href="">Link 1</a></li>
-        <li><a href="">Link 2</a></li>
-        <li><a href="">Link 3</a></li>
-        <li><a href="">Link 4</a></li>
-      </ul>
-      <a href="" class="logo">
-        <img src="" alt="">
-      </a>
+      <div class="container">
+        <ul class="header-menu">
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
+          <li><a href="">Link 3</a></li>
+          <li><a href="">Link 4</a></li>
+        </ul>
+        <a href="" class="logo">
+          <img src="" alt="">
+        </a>
+      </div>
     </nav>
   </header>
   <main class="page-main">
     <section class="section-slideshow">
-      <h2 class="section-title">Slideshow</h2>
-      <div class="section-body"></div>
+      <h2 class="section-title section-has-border">Slideshow</h2>
+      <img src="https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg" alt="">
     </section>
     <section class="section-inline-block">
       <h2 class="section-title">Inline && Block</h2>
       <div class="section-body">
-        <p class="im-block">Lorem <strong class="im-inline">ipsum</strong>, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="im-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong class="im-inline">Lorem ipsum dolor sit amet consectetur</strong> adipisicing elit. Laudantium beatae, repellat deserunt deleniti, dolorum fugit minima dolore sapiente recusandae vero nihil quia quos neque quam quod officia necessitatibus magni maiores.</p>
       </div>
     </section>
     <section class="section-news">
       <h2 class="section-title">Latest News</h2>
       <ul class="news-list">
         <li class="news-item">
-          <a href="" class="news-img">
-            <img src="" alt="">
-          </a>
-          <h3 class="news-title">
-            <a href="">Lorem ipsum dolor sit amet consectetur</a>
-          </h3>
-          <p class="news-author">
-            by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
-          </p>
-          <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="news-inner">
+            <a href="" class="news-img">
+              <img src="" alt="">
+            </a>
+            <h3 class="news-title">
+              <a href="">Lorem ipsum dolor sit amet consectetur</a>
+            </h3>
+            <p class="news-author">
+              by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
+            </p>
+            <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+            <a href="" class="news-link">></a>
+          </div>
         </li>
         <li class="news-item">
-          <a href="" class="news-img">
-            <img src="" alt="">
-          </a>
-          <h3 class="news-title">
-            <a href="">Lorem ipsum dolor sit amet consectetur</a>
-          </h3>
-          <p class="news-author">
-            by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
-          </p>
-          <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="news-inner">
+            <a href="" class="news-img">
+              <img src="" alt="">
+            </a>
+            <h3 class="news-title">
+              <a href="">Lorem ipsum dolor sit amet consectetur</a>
+            </h3>
+            <p class="news-author">
+              by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
+            </p>
+            <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
         </li>
+
         <li class="news-item">
-          <a href="" class="news-img">
-            <img src="" alt="">
-          </a>
-          <h3 class="news-title">
-            <a href="">Lorem ipsum dolor sit amet consectetur</a>
-          </h3>
-          <p class="news-author">
-            by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
-          </p>
-          <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <div class="news-inner">
+            <a href="" class="news-img">
+              <img src="" alt="">
+            </a>
+            <h3 class="news-title">
+              <a href="">Lorem ipsum dolor sit amet consectetur</a>
+            </h3>
+            <p class="news-author">
+              by <a href="">V. harnomi</a> / <a href="">Leave a commenbt</a>
+            </p>
+            <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
         </li>
       </ul>
     </section>
@@ -224,9 +243,39 @@
         </div>
       </div>
     </section>
+    <section class="section-animation">
+      <h2 class="section-title">Animation</h2>
+      <div class="section-body">
+        <div class="box-animation"></div>
+      </div>
+    </section>
+    <section id="priority" class="section-priority abc get-attr-from-html" data-tooltip="David Dong">
+      <h2 class="section-title">Priority Selector</h2>
+      <div class="section-body">
+        1. !important: 1000
+        2. inline: 100
+        3. id: 10
+        4. class: 1
+        5. tagname: 0
+      </div>
+    </section>
+    <section class="section-font">
+      <h2 class="section-title">Font</h2>
+      <div class="section-body">
+        1. Font system
+        2. Font Face
+        3. Font Google Font
+      </div>
+    </section>
   </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <footer class="page-footer">
     <div class="footer-top">
+      asdasda
       <!-- Content footer top -->
     </div>
     <div class="footer-middle">
